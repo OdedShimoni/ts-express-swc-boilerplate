@@ -1,0 +1,26 @@
+{
+    "jsc": {
+      "parser": {
+        "syntax": "typescript",
+        "jsx": false,
+        "dynamicImport": true,
+        "privateMethod": true,
+        "functionBind": false,
+        "exportDefaultFrom": true,
+        "exportNamespaceFrom": true,
+        "decorators": false,
+        "decoratorsBeforeExport": false,
+        "topLevelAwait": true,
+        "importMeta": false
+      },
+      "transform": null,
+      "target": "es5",
+      "loose": false,
+      "externalHelpers": false,
+      "keepClassNames": true
+    },
+    "module": {
+        "type": "commonjs"
+    },
+    "sourceMaps": true
+}

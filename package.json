@@ -1,0 +1,30 @@
+{
+  "name": "ts-node-boilerplate",
+  "private": true,
+  "version": "0.0.1",
+  "author": {
+    "name": "Oded Shimoni"
+  },
+  "scripts": {
+    "start": "node dist/main.js",
+    "start:dev": "concurrently --kill-others \"swc src --out-dir dist --watch\" \"nodemon dist/main.js\"",
+    "build": "yarn build:src && yarn build:types",
+    "build:src": "swc src --out-dir dist",
+    "build:types": "tsc -p ."
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.1.55",
+    "@swc/core": "^1.2.50",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.18",
+    "chokidar": "^3.5.3",
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "path": "^0.12.7"
+  }
+}
