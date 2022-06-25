@@ -1,11 +1,12 @@
 {
-    "include": ["src/**/*"],
-    "compilerOptions": {
-      "declaration": true,
-      "emitDeclarationOnly": true,
-      "outDir": "dist/types",
-      "declarationMap": true,
-      "target": "ES6",
-      "moduleResolution": "node"
-    }
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "dist/types",
+    "declarationMap": true,
+    "target": "ES6",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true
   }
+}
